@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoScreen">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".UserInfo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameTextView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            ></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Emailinizi girin"
+            android:id="@+id/emailEditText"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            ></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon numaranızı girin"
+            android:id="@+id/phoneEditText"
+            android:layout_margin="10dp"
+            android:inputType="phone"
+            android:imeOptions="actionDone"
+            ></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:id="@+id/saveButton"
+            android:layout_margin="10dp"
+            ></Button>
+
+    </LinearLayout>
+
+</FrameLayout>

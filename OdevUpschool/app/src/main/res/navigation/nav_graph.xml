@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.odevupschool.UserInfoScreen"
+        android:label="Bilgileriniz"
+   >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue=""
+            />
+
+        <action
+            android:id="@+id/userInfoFragment_to_CustomQuestionFragment"
+            app:destination="@id/CustomQuestionFragment"
+
+            app:popUpTo="@id/welcomeFragment"
+
+
+
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/CustomQuestionFragment"
+        android:name="com.example.odevupschool.CustomQuestionsScreen"
+        android:label="Soru Ekranı"
+     >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue=""
+            />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue=""
+            />
+
+        <argument
+            android:name="phone"
+            app:argType="string"
+            android:defaultValue=""
+            />
+        <action
+            android:id="@+id/action_CustomQuestionsScreen_to_ResultScreen"
+            app:destination="@id/ResultFragment"
+            app:popUpTo="@id/welcomeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.example.odevupschool.ResultScreen"
+        android:label="Son EKRAN"
+     >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.odevupschool.WelcomeScreen"
+        android:label="Hoşgeldiniz">
+
+        <action
+            android:id="@+id/action_WecomeScreen_to_InfoScreen"
+            app:destination="@id/userInfoFragment"
+            app:popUpTo="@id/welcomeFragment"/>
+    </fragment>
+</navigation>

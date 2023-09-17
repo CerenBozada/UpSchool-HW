@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adınızı ve soy adınızı girin"
+            android:id="@+id/nameEditText"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:selectAllOnFocus="true"
+            ></EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giriş"
+            android:id="@+id/loginButton"
+            android:layout_margin="10dp"
+            ></Button>
+
+    </LinearLayout>
+
+</FrameLayout>

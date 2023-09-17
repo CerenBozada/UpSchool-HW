@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomQuestionsScreen">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CustomQuestions">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameTextView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            ></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deneyimlerinizi girin"
+            android:id="@+id/experienceEditText"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            ></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Yaşadığınız şehir"
+            android:id="@+id/cityEditText"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Çalışma durumunuz"
+            android:id="@+id/workEditText"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            ></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:id="@+id/saveButton"
+            android:layout_margin="10dp"
+            ></Button>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
